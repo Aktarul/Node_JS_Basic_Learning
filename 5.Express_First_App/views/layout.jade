@@ -4,4 +4,19 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    ul
+      li My Text
+      p.
+        Hello World! The world is changing boy.
+        Time we change too.
+    input(type = 'text').class-name#anyid
+    if condition
+      p it's true
+    else
+      p it's false
+    - var anyArray = [1,2,3]
+    each value in anyArray
+      p= value
     block content
+
+    block Me
