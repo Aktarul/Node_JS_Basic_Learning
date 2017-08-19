@@ -18,7 +18,7 @@
 </center>
 
 
- <h2> {{ newFeature }} --></h2>
+<h2> {{ newFeature }} --></h2>
 <form action="/submit" method="post">
      <div class="input">
          <label for="email">E-Mail</label>
@@ -31,11 +31,11 @@
     <div class="input">
         <label for="confirmPassword">Confirm Password</label>
         <input type="password" id="confirmPassword" name="confirmPassword">
-        </div>
+    </div>
     <button type="submit">Sign up</button>
 </form>
 
- {{# if success }}
+{{# if success }}
  	<section class="success">
  		<h3>Successful validation!</h3>
  	</section>
@@ -50,3 +50,38 @@
  		</section>
  	{{/if}}
 {{/if}}<hr>
+
+
+<h2> {{ newFeature2 }} --> </h2>
+<p><b> Insert the data into the box and check if it is valid or not: </b></p>
+<form action="submit2" method="post">
+	<div class="input">
+		<label for="currency">Currency</label>
+		<input type="text" id="currency" name="currency">
+	</div>
+	<div class="input">
+		<label for="letter">Alphanumeric Letters</label>
+		<input type="text" id="letter" name="letter">
+	</div>
+	<div class="input">
+		<label for="number">Number</label>
+		<input type="number" id="number" name="number">
+	</div><br>
+	<button type="submit2">Check the validation</button>
+</form>
+{{# if success2 }}
+ 	<section class="success2">
+ 		<h3>All inputs are valid!</h3>
+ 	</section>
+ {{ else }}
+ 	{{# if errors2 }}
+ 		<section class="errors2">
+ 			<ul>
+ 				{{# each errors2 }}
+ 					<li>{{ this.msg }}</li>
+ 				{{/each}}
+ 			</ul>
+ 		</section>
+ 	{{/if}}
+{{/if}}
+<hr><br><br><br>
