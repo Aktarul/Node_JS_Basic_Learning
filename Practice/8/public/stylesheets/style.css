@@ -1,0 +1,43 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+nav {
+    float: left;
+    max-width: 500px;
+    margin: 0;
+    padding: 2em;
+}
+
+article {
+  max-width: 400px;
+    margin-left: 400px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+article.insert {
+    background: #66d9ff;
+}
+
+article.update {
+    background: #8cd98c;
+}
+
+article.delete {
+    background: #ff9980;
+}
+
+.item {
+  margin: 10px 80px;
+  padding: 10px;
+  background: #ffff80;
+  font-size: 16px;
+}
